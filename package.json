@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ottoman": "^2.0.0-alpha.19"
+    "ottoman": "^2.0.0-alpha.22"
   }
 }
