@@ -12,7 +12,7 @@ const { Airline } = require('./airline-schema-and-model')
 // Remove the Couchbase Airline document by ID from Couchbase Server
 const removeDocument = async() => {
   try {
-    await Airline.removeById('60e3f517-6a2a-41fe-be45-97081181d675')
+    await Airline.removeById('Airline::ec21bc12-4ee8-40c7-96dc-b5421e9873e1')
       .then((result) => console.log(result))
   } catch (error) {
     throw error
@@ -21,7 +21,7 @@ const removeDocument = async() => {
 
 ottoman.start()
   .then(async() => {
-    findDocumentAndUpdate()
+    removeDocument()
       .then(() => process.exit(0))
       .catch((error) => console.log(error))
   })
